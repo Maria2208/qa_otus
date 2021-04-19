@@ -1,5 +1,5 @@
 import pytest
-from source.Figure import Square
+from hw1_oop.source.Figure import Square
 
 
 def test_check_area(default_square):

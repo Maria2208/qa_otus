@@ -1,5 +1,5 @@
 import pytest
-from source.Figure import Triangle, Circle, Rectangle, Square
+from hw1_oop.source.Figure import Triangle, Circle, Rectangle, Square
 
 
 @pytest.fixture()

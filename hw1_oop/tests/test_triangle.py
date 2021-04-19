@@ -1,5 +1,5 @@
 import pytest
-from source.Figure import Triangle
+from hw1_oop.source.Figure import Triangle
 
 
 def test_check_area(default_triangle):
