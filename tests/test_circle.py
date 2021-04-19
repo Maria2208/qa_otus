@@ -16,10 +16,10 @@ def test_check_perimeter(default_circle):
 def test_circle_has_negative_radius():
     """Метод проверяет, что выбрасывается исключение, если в радиусе передать отрицательное значение"""
     with pytest.raises(ValueError):
-        Circle(name="круг", radius=-1)
+        Circle(name="круг", radius=-1).check_values()
 
 
 def test_circle_has_string_radius():
     """Метод проверяет, что выбрасывается исключение, если в радиусе передать строку"""
     with pytest.raises(ValueError):
-        Circle(name="круг", radius='abc')
+        Circle(name="круг", radius='abc').check_values()

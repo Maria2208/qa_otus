@@ -15,22 +15,22 @@ def test_check_perimeter(default_rectangle):
 def test_rectangle_has_negative_length():
     """Метод проверяет, что выбрасывается исключение, если в length передать отрицательное значение"""
     with pytest.raises(ValueError):
-        Rectangle(name="прямоугольник", length=-1, width=1)
+        Rectangle(name="прямоугольник", length=-1, width=1).check_values()
 
 
 def test_rectangle_has_string_length():
     """Метод проверяет, что выбрасывается исключение, если в length передать строковое значение"""
     with pytest.raises(ValueError):
-        Rectangle(name="прямоугольник", length="абс", width=1)
+        Rectangle(name="прямоугольник", length="абс", width=1).check_values()
 
 
 def test_rectangle_has_negative_width():
     """Метод проверяет, что выбрасывается исключение, если в width передать отрицательное значение"""
     with pytest.raises(ValueError):
-        Rectangle(name="прямоугольник", length=1, width=-1)
+        Rectangle(name="прямоугольник", length=1, width=-1).check_values()
 
 
 def test_rectangle_has_string_width():
     """Метод проверяет, что выбрасывается исключение, если в width передать строковое значение"""
     with pytest.raises(ValueError):
-        Rectangle(name="прямоугольник", length=1, width='abc')
+        Rectangle(name="прямоугольник", length=1, width='abc').check_values()
