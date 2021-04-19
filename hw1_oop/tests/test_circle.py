@@ -1,4 +1,4 @@
-from source.Figure import Circle
+from hw1_oop.source.Figure import Circle
 from math import pi
 import pytest
 

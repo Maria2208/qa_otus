@@ -1,5 +1,5 @@
 import pytest
-from source.Figure import Rectangle
+from hw1_oop.source.Figure import Rectangle
 
 
 def test_check_area(default_rectangle):
