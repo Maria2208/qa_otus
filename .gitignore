@@ -2,3 +2,5 @@
 venv/
 docker-compose.yml
 .pytest_cache/
+.DS_Store
+hw2_test_data/data/
